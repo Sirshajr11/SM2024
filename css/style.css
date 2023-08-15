@@ -5,6 +5,11 @@
     --light: #F0F6FF;
     --dark: #262B47;
 }
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
 /*** Spinner ***/
@@ -44,6 +49,7 @@ h6,
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
+    
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -72,6 +78,7 @@ h6,
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient {
     position: relative;
+    margin-left: 50px;
     overflow: hidden;
     border: none;
     color: #FFFFFF;
@@ -256,10 +263,12 @@ h6,
 }
 
 
+
+
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
-    padding: 16rem 0 0 0;
+    padding: 16rem 16rem 6rem 6rem;
     background:
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
@@ -499,4 +508,21 @@ h6,
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+.col-lg-4 d-flex justify-content-center justify-content-lg-end {
+    margin-top: 50px;
+    height: 6000px;
+    width: 6000px;
+    position: absolute;
+    top: calc(35%  -250px);
+    right: 7%;
+}
+.col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp model-viewer{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    color: black;
 }
